@@ -41,7 +41,7 @@ const channels = [
     label: "ที่ตั้งคลินิก",
     value: "กรุงเทพมหานคร",
     sub: "ดูแผนที่และรายละเอียดเพิ่มเติม",
-    href: "https://debeauclinic.com/contact-us/",
+    href: "/contact-us",
     color: "#69554a",
   },
   {

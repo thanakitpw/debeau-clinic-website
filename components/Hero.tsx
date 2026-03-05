@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, ChevronRight, MapPin, Phone, Mail, Check } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -212,7 +212,7 @@ export default function Hero() {
             style={{ backgroundColor: "white" }}
           >
             <p className="text-xs font-medium" style={{ color: "#69554a" }}>
-              ✦ ดูแลทุกเคสโดยแพทย์
+              <Check size={12} className="inline mr-1" style={{ color: "#c38789" }} /> ดูแลทุกเคสโดยแพทย์
             </p>
           </div>
         </div>

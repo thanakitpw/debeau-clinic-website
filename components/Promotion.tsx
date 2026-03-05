@@ -128,9 +128,7 @@ export default function Promotion() {
         {/* Full Promo CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://debeauclinic.com/promotion/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/promotion"
             className="btn-primary"
           >
             ดูโปรโมชั่นทั้งหมด

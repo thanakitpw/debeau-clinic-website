@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Award, GraduationCap, Briefcase, ArrowRight, UserRound } from "lucide-react";
 
 const highlights = [
   "แพทย์เฉพาะทางด้านความงาม ประสบการณ์กว่า 10 ปี",
@@ -65,7 +65,7 @@ export default function About() {
                   className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl"
                   style={{ backgroundColor: "rgba(255,255,255,0.3)" }}
                 >
-                  👩‍⚕️
+                  <UserRound size={36} style={{ color: "#c38789" }} />
                 </div>
                 <div
                   className="text-2xl font-light mb-1"
@@ -166,9 +166,7 @@ export default function About() {
           {/* CTA */}
           <div className="mt-4 flex flex-wrap gap-4">
             <a
-              href="https://debeauclinic.com/about-dr-beau/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/about-dr-beau"
               className="btn-primary"
             >
               อ่านประวัติเพิ่มเติม

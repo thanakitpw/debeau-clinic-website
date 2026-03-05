@@ -177,9 +177,7 @@ export default function Services() {
         {/* Bottom CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://debeauclinic.com/services/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/services"
             className="btn-outline"
           >
             ดูบริการทั้งหมด

@@ -4,22 +4,22 @@ const footerLinks = [
   {
     title: "บริการ",
     links: [
-      { label: "ฟิลเลอร์", href: "https://debeauclinic.com/filler/" },
-      { label: "ลดริ้วรอย (Botox)", href: "https://debeauclinic.com/botox/" },
-      { label: "ยกกระชับ (Ulthera)", href: "https://debeauclinic.com/ulthera/" },
-      { label: "Laser หน้าใส", href: "https://debeauclinic.com/laser/" },
-      { label: "Mesotherapy", href: "https://debeauclinic.com/mesotherapy/" },
-      { label: "Facial Treatment", href: "https://debeauclinic.com/facial-treatments/" },
+      { label: "ฟิลเลอร์", href: "/filler" },
+      { label: "ลดริ้วรอย (Botox)", href: "/botox" },
+      { label: "ยกกระชับ (Ulthera)", href: "/ulthera" },
+      { label: "Laser หน้าใส", href: "/laser" },
+      { label: "Mesotherapy", href: "/mesotherapy" },
+      { label: "Facial Treatment", href: "/facial-treatments" },
     ],
   },
   {
     title: "เกี่ยวกับเรา",
     links: [
-      { label: "เกี่ยวกับหมอโบ", href: "https://debeauclinic.com/about-dr-beau/" },
-      { label: "รีวิวลูกค้า", href: "https://debeauclinic.com/customer-reviews/" },
-      { label: "โปรโมชั่น", href: "https://debeauclinic.com/promotion/" },
-      { label: "บทความ", href: "https://debeauclinic.com/บทความ/" },
-      { label: "ติดต่อเรา", href: "https://debeauclinic.com/contact-us/" },
+      { label: "เกี่ยวกับหมอโบ", href: "/about-dr-beau" },
+      { label: "รีวิวลูกค้า", href: "/customer-reviews" },
+      { label: "โปรโมชั่น", href: "/promotion" },
+      { label: "บทความ", href: "/บทความ" },
+      { label: "ติดต่อเรา", href: "/contact-us" },
     ],
   },
 ];

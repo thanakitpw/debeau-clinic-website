@@ -13,7 +13,7 @@ const contactInfo = [
     icon: MapPin,
     label: "ที่ตั้งคลินิก",
     value: "กรุงเทพมหานคร",
-    href: "https://debeauclinic.com/contact-us/",
+    href: "/contact-us",
   },
   {
     icon: Clock,
