@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #c38789;
+  --color-accent: #69554a;
+  --color-secondary: #8b7f7c;
+  --color-sand: #c7bfb5;
+  --color-offwhite: #e8e7e5;
+  --background: #e8e7e5;
+  --foreground: #3a2e2b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-noto-sans-thai);
+  --color-primary: #c38789;
+  --color-accent: #69554a;
+  --color-secondary: #8b7f7c;
+  --color-sand: #c7bfb5;
+  --color-offwhite: #e8e7e5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-sans-thai), 'Noto Sans Thai', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.divider-rose {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, #c38789, #8b7f7c);
+  margin: 0 auto;
+}
+
+.section-title {
+  @apply text-3xl font-light tracking-wide text-center mb-3;
+  color: #69554a;
+}
+
+.section-subtitle {
+  @apply text-center text-sm tracking-widest uppercase mb-4;
+  color: #c38789;
+  letter-spacing: 0.2em;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-8 py-3 rounded-full font-medium transition-all duration-300;
+  background-color: #c38789;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #b07274;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(195,135,137,0.35);
+}
+
+.btn-outline {
+  @apply inline-flex items-center gap-2 px-8 py-3 rounded-full font-medium transition-all duration-300 border;
+  border-color: #c38789;
+  color: #c38789;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #c38789;
+  color: #fff;
 }
