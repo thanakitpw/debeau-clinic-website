@@ -18,7 +18,7 @@ const footerLinks = [
       { label: "เกี่ยวกับหมอโบ", href: "/about-dr-beau" },
       { label: "รีวิวลูกค้า", href: "/customer-reviews" },
       { label: "โปรโมชั่น", href: "/promotion" },
-      { label: "บทความ", href: "/บทความ" },
+      { label: "บทความ", href: "/blog" },
       { label: "ติดต่อเรา", href: "/contact-us" },
     ],
   },
