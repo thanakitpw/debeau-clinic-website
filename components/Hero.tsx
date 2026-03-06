@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowRight, Star, ChevronRight, MapPin, Phone, Mail, Check } from "lucide-react";
 
 export default function Hero() {
@@ -121,82 +122,45 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right - Visual Card */}
+        {/* Right - Hero Image */}
         <div className="relative flex justify-center lg:justify-end">
-          {/* Main image placeholder - elegant frame */}
           <div className="relative">
-            {/* Outer decorative border */}
+            {/* Decorative border frame */}
             <div
               className="absolute inset-0 rounded-3xl"
               style={{
-                border: "1px solid",
-                borderColor: "#c38789",
+                border: "1px solid #c38789",
                 opacity: 0.3,
-                transform: "translate(12px, 12px)",
+                transform: "translate(10px, 10px)",
               }}
             />
 
-            {/* Main card */}
-            <div
-              className="relative w-[340px] h-[480px] rounded-3xl overflow-hidden flex flex-col items-center justify-center"
-              style={{ backgroundColor: "#c7bfb5", opacity: 0.9 }}
-            >
-              {/* Gradient overlay */}
+            {/* Main image */}
+            <div className="relative w-[520px] max-w-full rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/hero-banner.jpg"
+                alt="De Beau Clinic - หมอโบ พญ.ปารวัตร ดัชชวนิชย์"
+                width={1024}
+                height={472}
+                priority
+                className="w-full h-auto object-cover"
+                style={{ display: "block" }}
+              />
+              {/* Subtle gradient overlay at bottom */}
               <div
-                className="absolute inset-0"
+                className="absolute bottom-0 left-0 right-0 h-24"
                 style={{
-                  background:
-                    "linear-gradient(160deg, rgba(195,135,137,0.15) 0%, rgba(105,85,74,0.2) 100%)",
+                  background: "linear-gradient(to top, rgba(105,85,74,0.35) 0%, transparent 100%)",
                 }}
               />
-
-              {/* Clinic logo text in card */}
-              <div className="relative z-10 text-center px-8">
-                <div
-                  className="text-4xl font-extralight tracking-[0.4em] mb-2"
-                  style={{ color: "#69554a" }}
-                >
-                  DE
-                </div>
-                <div
-                  className="text-6xl font-light tracking-[0.3em]"
-                  style={{ color: "#69554a" }}
-                >
-                  BEAU
-                </div>
-                <div
-                  className="mt-3 text-xs tracking-[0.35em] uppercase"
-                  style={{ color: "#8b7f7c" }}
-                >
-                  Beauty Clinic
-                </div>
-                <div
-                  className="mt-6 w-12 h-px mx-auto"
-                  style={{ backgroundColor: "#c38789" }}
-                />
-                <div
-                  className="mt-6 text-sm font-light leading-relaxed"
-                  style={{ color: "#69554a" }}
-                >
-                  ความงามที่คุณสัมผัสได้
-                  <br />
-                  ความมั่นใจที่ยั่งยืน
-                </div>
-              </div>
-
               {/* Bottom badge */}
               <div
-                className="absolute bottom-6 left-6 right-6 flex items-center gap-2 px-4 py-3 rounded-2xl"
-                style={{ backgroundColor: "rgba(255,255,255,0.7)" }}
+                className="absolute bottom-5 left-5 right-5 flex items-center gap-2 px-4 py-3 rounded-2xl backdrop-blur-sm"
+                style={{ backgroundColor: "rgba(255,255,255,0.85)" }}
               >
                 <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      size={12}
-                      fill="#c38789"
-                      color="#c38789"
-                    />
+                    <Star key={i} size={12} fill="#c38789" color="#c38789" />
                   ))}
                 </div>
                 <span className="text-xs font-medium" style={{ color: "#69554a" }}>
