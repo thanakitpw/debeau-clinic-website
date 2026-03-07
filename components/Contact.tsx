@@ -34,7 +34,7 @@ export default function Contact() {
     <section
       id="contact"
       className="py-24 px-6"
-      style={{ backgroundColor: "#69554a" }}
+      style={{ backgroundColor: "#e8e7e5" }}
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -47,7 +47,7 @@ export default function Contact() {
           </p>
           <h2
             className="text-3xl font-light tracking-wide"
-            style={{ color: "#fff" }}
+            style={{ color: "#69554a" }}
           >
             ติดต่อเรา
           </h2>
@@ -59,7 +59,7 @@ export default function Contact() {
           />
           <p
             className="text-sm font-light max-w-md mx-auto"
-            style={{ color: "rgba(255,255,255,0.7)" }}
+            style={{ color: "#8b7f7c" }}
           >
             พร้อมให้คำปรึกษาและดูแลคุณ ติดต่อเราได้หลายช่องทาง
           </p>
@@ -73,25 +73,25 @@ export default function Contact() {
               const content = (
                 <div
                   key={idx}
-                  className="flex items-center gap-5 p-5 rounded-2xl transition-all duration-200 hover:bg-white/5"
-                  style={{ border: "1px solid rgba(255,255,255,0.1)" }}
+                  className="flex items-center gap-5 p-5 rounded-2xl transition-all duration-200 hover:bg-[#faf9f8]"
+                  style={{ border: "1px solid #e0ddd9" }}
                 >
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
-                    style={{ backgroundColor: "rgba(195,135,137,0.2)" }}
+                    style={{ backgroundColor: "#c7bfb5" }}
                   >
                     <Icon size={20} style={{ color: "#c38789" }} />
                   </div>
                   <div>
                     <p
                       className="text-xs tracking-wide uppercase mb-1"
-                      style={{ color: "rgba(255,255,255,0.5)" }}
+                      style={{ color: "#8b7f7c" }}
                     >
                       {item.label}
                     </p>
                     <p
                       className="text-base font-light"
-                      style={{ color: "#fff" }}
+                      style={{ color: "#69554a" }}
                     >
                       {item.value}
                     </p>
@@ -122,7 +122,7 @@ export default function Contact() {
           {/* Right - CTA Card */}
           <div
             className="rounded-3xl p-10 flex flex-col items-center gap-6 text-center"
-            style={{ backgroundColor: "rgba(255,255,255,0.07)" }}
+            style={{ backgroundColor: "#fff" }}
           >
             {/* LINE Icon */}
             <div
@@ -142,13 +142,13 @@ export default function Contact() {
             <div>
               <h3
                 className="text-2xl font-light mb-2"
-                style={{ color: "#fff" }}
+                style={{ color: "#69554a" }}
               >
                 ปรึกษาหมอโบฟรี!
               </h3>
               <p
                 className="text-sm font-light leading-relaxed"
-                style={{ color: "rgba(255,255,255,0.7)" }}
+                style={{ color: "#8b7f7c" }}
               >
                 ADD LINE เพื่อนัดปรึกษา ถามเรื่องการรักษา
                 หรือสอบถามราคาได้เลยค่ะ
@@ -172,7 +172,7 @@ export default function Contact() {
 
             <p
               className="text-xs font-light"
-              style={{ color: "rgba(255,255,255,0.4)" }}
+              style={{ color: "#8b7f7c" }}
             >
               ตอบกลับภายใน 24 ชั่วโมง
             </p>

@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
         {/* Brand */}
         <div className="flex flex-col gap-5">
-          <div>
+          <div className="pb-2">
             <Image
               src="/logo.png"
               alt="DE BEAU CLINIC"
