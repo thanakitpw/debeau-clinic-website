@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "คลินิกให้คำปรึกษาและมีประสบการณ์ด้านการปรับรูปหน้า โปรแกรมฟิลเลอร์เติมเต็มใต้ตา ขมับตอบ แก้มตอบ ร่องแก้ม คาง ริมฝีปาก คุณหมอดูแลให้เคสต่อเคส",
   keywords: ["ฟิลเลอร์", "DE BEAU CLINIC", "คลินิกความงาม", "ปรับรูปหน้า"],
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

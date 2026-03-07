@@ -1,5 +1,9 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+
 const footerLinks = [
   {
     title: "บริการ",
@@ -32,18 +36,14 @@ export default function Footer() {
         {/* Brand */}
         <div className="flex flex-col gap-5">
           <div>
-            <div
-              className="text-2xl font-light tracking-[0.3em] uppercase"
-              style={{ color: "#e8e7e5" }}
-            >
-              DE BEAU
-            </div>
-            <div
-              className="text-xs tracking-[0.3em] uppercase mt-1"
-              style={{ color: "#c38789" }}
-            >
-              Beauty Clinic
-            </div>
+            <Image
+              src="/logo.png"
+              alt="DE BEAU CLINIC"
+              width={180}
+              height={36}
+              className="h-9 w-auto"
+              style={{ display: "block" }}
+            />
           </div>
           <p
             className="text-sm leading-relaxed font-light"

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 
@@ -51,13 +52,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-baseline gap-2 leading-tight">
-          <span className="text-2xl font-light tracking-[0.25em] uppercase" style={{ color: "#69554a" }}>
-            De Beau
-          </span>
-          <span className="text-[10px] tracking-[0.3em] uppercase" style={{ color: "#c38789" }}>
-            Clinic
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="DE BEAU CLINIC"
+            width={160}
+            height={32}
+            className="h-8 w-auto"
+            style={{ display: "block" }}
+          />
         </Link>
 
         {/* Desktop Nav */}
