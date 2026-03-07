@@ -56,9 +56,9 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="DE BEAU CLINIC"
-            width={240}
-            height={48}
-            className="h-12 w-auto"
+            width={320}
+            height={64}
+            className="h-16 w-auto"
             style={{ display: "block" }}
           />
         </Link>
