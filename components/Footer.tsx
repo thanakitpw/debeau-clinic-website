@@ -39,9 +39,9 @@ export default function Footer() {
             <Image
               src="/logo.png"
               alt="DE BEAU CLINIC"
-              width={180}
-              height={36}
-              className="h-9 w-auto"
+              width={280}
+              height={56}
+              className="h-14 w-auto"
               style={{ display: "block" }}
             />
           </div>
