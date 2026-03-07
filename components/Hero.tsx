@@ -10,28 +10,28 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden"
       style={{ backgroundColor: "#e8e7e5" }}
     >
-      {/* Full-width background image */}
-      <div className="absolute inset-0">
+      {/* Full-width background image (desktop only) */}
+      <div className="absolute inset-0 hidden lg:block">
         <Image
           src="/hero-banner.jpg"
           alt="De Beau Clinic - หมอโบ พญ.ปารวัตร ดัชชวนิชย์"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-[center_20%]"
         />
-        {/* Left gradient overlay so text is readable */}
+        {/* Smoother gradient overlay */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(232,231,229,0.97) 0%, rgba(232,231,229,0.88) 40%, rgba(232,231,229,0.3) 70%, rgba(232,231,229,0.0) 100%)",
+              "linear-gradient(to right, rgba(232,231,229,0.95) 0%, rgba(232,231,229,0.85) 35%, rgba(232,231,229,0.4) 65%, rgba(232,231,229,0.15) 85%, rgba(232,231,229,0.0) 100%)",
           }}
         />
-        {/* Bottom fade */}
+        {/* Gentle bottom fade */}
         <div
-          className="absolute bottom-0 left-0 right-0 h-32"
+          className="absolute bottom-0 left-0 right-0 h-40"
           style={{
-            background: "linear-gradient(to top, rgba(232,231,229,0.9) 0%, transparent 100%)",
+            background: "linear-gradient(to top, rgba(232,231,229,0.88) 0%, transparent 100%)",
           }}
         />
       </div>
@@ -58,19 +58,17 @@ export default function Hero() {
 
           {/* Headline */}
           <div>
-            <h1
-              className="text-5xl lg:text-7xl font-light leading-[1.1] tracking-wide"
-              style={{ color: "#69554a" }}
-            >
-              DE BEAU
-            </h1>
-            <h2
-              className="text-5xl lg:text-7xl font-light leading-[1.1] tracking-wide"
-              style={{ color: "#69554a" }}
-            >
-              CLINIC
-            </h2>
-            <p className="mt-4 text-xl font-light" style={{ color: "#8b7f7c" }}>
+            <div className="mb-6">
+              <Image
+                src="/logo.png"
+                alt="DE BEAU CLINIC"
+                width={400}
+                height={80}
+                className="h-20 w-auto"
+                style={{ display: "block" }}
+              />
+            </div>
+            <p className="text-xl font-light" style={{ color: "#8b7f7c" }}>
               ปรับรูปหน้า เติมเต็มความมั่นใจ
               <br />
               ด้วยมือแพทย์ผู้เชี่ยวชาญ

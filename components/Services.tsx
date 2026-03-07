@@ -83,7 +83,7 @@ export default function Services() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="section-subtitle">Our Services</p>
-          <h2 className="section-title">สินค้าและบริการ</h2>
+          <h2 className="section-title">บริการของเรา</h2>
           <div className="divider-rose mt-4 mb-6" />
           <p
             className="max-w-xl mx-auto text-sm leading-relaxed font-light"
@@ -102,7 +102,7 @@ export default function Services() {
               href={service.href}
               className="group relative flex flex-col gap-4 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               style={{
-                backgroundColor: idx % 2 === 0 ? "#e8e7e5" : "#faf9f8",
+                backgroundColor: "#faf9f8",
                 border: "1px solid",
                 borderColor: "#e0ddd9",
               }}
