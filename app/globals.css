@@ -14,6 +14,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-noto-sans-thai);
+  --font-serif: var(--font-playfair);
   --color-primary: #c38789;
   --color-accent: #69554a;
   --color-secondary: #8b7f7c;
@@ -76,4 +77,48 @@ body {
 .btn-outline:hover {
   background-color: #c38789;
   color: #fff;
+}
+
+/* Typography improvements */
+body {
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-bottom: 1rem;
+  max-width: 65ch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+/* Reading optimized text */
+.text-readable {
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  word-spacing: 0.05em;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Focus styles */
+a:focus-visible {
+  outline: 2px solid #c38789;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: rgba(195, 135, 137, 0.2);
+  color: #69554a;
 }

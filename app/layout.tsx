@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Thai } from "next/font/google";
+import { Noto_Sans_Thai, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const notoSansThai = Noto_Sans_Thai({
   variable: "--font-noto-sans-thai",
   subsets: ["thai", "latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -28,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="th">
-      <body className={`${notoSansThai.variable} antialiased`}>
+      <body className={`${notoSansThai.variable} ${playfairDisplay.variable} antialiased`}>
         {children}
       </body>
     </html>

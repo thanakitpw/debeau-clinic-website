@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="flex flex-col gap-5">
           <div className="pb-2">
             <Image
-              src="/logo.png"
+              src="/logo-footer.png"
               alt="DE BEAU CLINIC"
               width={280}
               height={56}
