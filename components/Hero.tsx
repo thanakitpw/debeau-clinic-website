@@ -44,22 +44,22 @@ export default function Hero() {
 
       {/* Content — left side only */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-28 pb-24">
-        <div className="max-w-xl">
+        <div className="max-w-2xl">
           {/* Logo */}
-          <div className="mb-4">
+          <div className="mb-6">
             <Image
               src="/logo.png"
               alt="DE BEAU CLINIC"
-              width={400}
-              height={80}
-              className="h-20 w-auto"
+              width={500}
+              height={100}
+              className="h-24 lg:h-28 w-auto"
               style={{ display: "block" }}
             />
           </div>
 
           {/* Subtitle - Aesthetic & Wellness Center */}
           <h2
-            className="text-2xl lg:text-3xl font-light mb-3"
+            className="text-3xl lg:text-4xl font-light mb-4"
             style={{ color: "#8b7f7c" }}
           >
             Aesthetic & Wellness Center
@@ -67,7 +67,7 @@ export default function Hero() {
 
           {/* Thai Description */}
           <p
-            className="text-base font-light mb-8"
+            className="text-lg lg:text-xl font-light mb-10"
             style={{ color: "#69554a", opacity: 0.85 }}
           >
             ดูแลผิวพรรณและออกแบบความงามเฉพาะบุคคล
